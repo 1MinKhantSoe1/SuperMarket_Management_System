@@ -93,7 +93,7 @@ namespace SuperMarket
             this.tbox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbox_password.Location = new System.Drawing.Point(526, 267);
             this.tbox_password.Name = "tbox_password";
-            this.tbox_password.PasswordChar = '\0';
+            this.tbox_password.PasswordChar = '*';
             this.tbox_password.PlaceholderText = "";
             this.tbox_password.SelectedText = "";
             this.tbox_password.Size = new System.Drawing.Size(200, 36);
@@ -245,6 +245,7 @@ namespace SuperMarket
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
