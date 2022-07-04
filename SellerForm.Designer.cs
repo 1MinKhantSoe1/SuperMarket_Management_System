@@ -29,9 +29,9 @@ namespace SuperMarket
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbox_SellerPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.SellerDGV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -49,7 +49,7 @@ namespace SuperMarket
             this.label1 = new System.Windows.Forms.Label();
             this.login_label = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.btn_selling = new System.Windows.Forms.Button();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.btn_categories = new System.Windows.Forms.Button();
             this.btn_products = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -101,30 +101,30 @@ namespace SuperMarket
             // 
             // SellerDGV
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.SellerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.SellerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.SellerDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.SellerDGV.BackgroundColor = System.Drawing.Color.White;
             this.SellerDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SellerDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.SellerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SellerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SellerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.SellerDGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SellerDGV.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SellerDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.SellerDGV.EnableHeadersVisualStyles = false;
             this.SellerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SellerDGV.Location = new System.Drawing.Point(386, 94);
@@ -363,18 +363,19 @@ namespace SuperMarket
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // btn_selling
+            // btn_logout
             // 
-            this.btn_selling.FlatAppearance.BorderSize = 0;
-            this.btn_selling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_selling.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_selling.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_selling.Location = new System.Drawing.Point(34, 365);
-            this.btn_selling.Name = "btn_selling";
-            this.btn_selling.Size = new System.Drawing.Size(128, 37);
-            this.btn_selling.TabIndex = 23;
-            this.btn_selling.Text = "Selling";
-            this.btn_selling.UseVisualStyleBackColor = true;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_logout.Location = new System.Drawing.Point(34, 695);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(128, 37);
+            this.btn_logout.TabIndex = 23;
+            this.btn_logout.Text = "Logout";
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // btn_categories
             // 
@@ -409,7 +410,7 @@ namespace SuperMarket
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1356, 755);
-            this.Controls.Add(this.btn_selling);
+            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.btn_categories);
             this.Controls.Add(this.btn_products);
             this.Controls.Add(this.btn_exit);
@@ -444,7 +445,7 @@ namespace SuperMarket
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label login_label;
         private System.Windows.Forms.Button btn_exit;
-        private System.Windows.Forms.Button btn_selling;
+        private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Button btn_categories;
         private System.Windows.Forms.Button btn_products;
         private Guna.UI2.WinForms.Guna2TextBox tbox_SellerPassword;

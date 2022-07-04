@@ -149,5 +149,12 @@ namespace SuperMarket
             catform.Show();
             this.Hide();
         }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
+        }
     }
 }
